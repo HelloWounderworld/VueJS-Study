@@ -21,3 +21,8 @@ Usamos as seguintes extensões para VueJS e para possibilitar que rode os arquiv
 
 ## Referência para consulta:
 Durante o curso da Udemy, em paralelo, foi lido a documentação, https://br.vuejs.org/v2/guide, de acordo com os conceitos revisados para cada assunto da aula.
+
+# Projetos que consegui criar:
+Seguir a lista de projetos que desenvolvi com o framework VueJS:
+
+- WebSocket-Vue3 (https://github.com/HelloWounderworld/WebSocket-Vue3.git)
