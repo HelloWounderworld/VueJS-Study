@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> -->
+    <title>Document</title>
+    <style>
+        .vermelho {
+            background-color: red;
+        }
+        .azul {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <input type="text" @keyup="imprimirTexto('Enviando parâmetro', 5, $event)">
+        <button @click="mensagemAlerta($event)">Botão</button>
+    </div>
+
+    <script>
+
+        const vm = new Vue({
+            el: '#app', // '#' para selecionar por id | '.' para selecionar por class. Muito similar ao JQuery.
+            data: {
+                xyz: true
+            },
+            methods: {
+                imprimirTexto(t, n, event) {
+                    console.log(t)
+                    console.log(n)
+                    console.log(event)
+                    console.log(this.xyz)
+                },
+                mensagemAlerta(event) {
+                    console.log(event)
+                }
+            }
+        });
+
+    </script>
+
+</body>
+</html>
